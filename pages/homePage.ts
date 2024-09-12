@@ -23,7 +23,12 @@ export class HomePage {
 
   }
   async acceptCookieBanner () {
-    await this.acceptCookies.click();
+    try {
+      
+      await this.acceptCookies.click();
+    } catch {
+      
+    }
   }
   
 }
