@@ -18,5 +18,6 @@ export class SearchResultPage {
     async addProductToBasket () {
         await expect(this.searchResult).toBeVisible();
         await this.selectProduct.click()
+        await this.page.waitForTimeout(2000)
     }
 }
