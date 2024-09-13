@@ -2,14 +2,13 @@ import { expect, type Locator, type Page } from '@playwright/test';
 
 export class Header {
     readonly page: Page;
-    readonly isMob: boolean | undefined;
     selectSearchField: Locator;
     selectSearchButton: Locator;
     selectBasket: Locator;
 
 
 
-    constructor(page: Page, isMob: boolean | undefined) {
+    constructor(page: Page) {
         this.page = page;
         this.selectSearchField = page.locator('#twotabsearchtextbox');
         this.selectSearchButton = page.locator('#nav-search-submit-button')

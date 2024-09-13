@@ -8,7 +8,8 @@
     "@types/node": "^22.5.4"
   },
   "scripts": {
-     "test": "npx playwright test"
+     "test": "npx playwright test",
+     "test:headed": "npx playwright test --headed"
   },
   "dependencies": {
     "dotenv": "^16.4.5"

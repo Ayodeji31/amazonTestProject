@@ -14,8 +14,8 @@ const test = baseText.extend<{
     homepage: async ({ page }, use) => {
         await use(new HomePage(page));
     },
-    header: async ({ page, isMobile }, use) => {
-        await use(new Header(page, isMobile));
+    header: async ({ page }, use) => {
+        await use(new Header(page));
     },
     searchResults: async ({ page }, use) => {
         await use(new SearchResultPage(page));
