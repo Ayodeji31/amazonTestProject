@@ -1,4 +1,4 @@
 const testData = {
-    product: "Smart phone"
+    product: "Samsung Galaxy A15"
 }
 export default testData
