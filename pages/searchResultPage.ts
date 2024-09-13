@@ -6,8 +6,6 @@ export class SearchResultPage {
     selectProduct: Locator;
 
 
-// [data-index="7"]
-
 
     constructor(page: Page) {
         this.page = page;
@@ -15,7 +13,7 @@ export class SearchResultPage {
         this.selectProduct = page.locator('[id="a-autoid-3-announce"]')
     }
 
-    async addProductToBasket () {
+    async addProductToBasket() {
         await expect(this.searchResult).toBeVisible();
         await this.selectProduct.click()
         await this.page.waitForTimeout(2000)
