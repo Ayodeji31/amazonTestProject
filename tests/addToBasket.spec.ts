@@ -3,7 +3,7 @@ import Config from '../utils/config';
 import testData from '../utils/testData';
 test.beforeEach(async ({ page }) => await page.goto(`${Config.BaseUrl}`));
 
-test('Add product to basket', async ({ header, homepage, searchResults, basketpage, page }) => {
+test('Add product to basket, increase, decrease quantity and delete', async ({ header, homepage, searchResults, basketpage, page }) => {
   await homepage.isPresent();
   await homepage.acceptCookieBanner();
 
